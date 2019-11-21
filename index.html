@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Yeh Mera Kaam</title>
+      <link href="https://fonts.googleapis.com/css?family=Baloo|Concert+One|Delius|Fredoka+One|Give+You+Glory|Happy+Monkey|Mukta+Malar:200,300,400,500,600,700,800|Orbitron:400,500,700,900|Righteous|Special+Elite|Yesteryear&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/all.css" >
+      <link rel="stylesheet" href="css/bootstrap-select.css">
+      <link rel="stylesheet" href="style.css" >
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+   </head>
+   <body>
+      <div class="map">
+         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15225.25602494387!2d78.45488983704455!3d17.44467863857389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1563780537586!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      
+      <div class="mainConatiner">
+         <div class="homePage resultZero siblingTab show">
+            <header class="d-flex">
+               <div class="float-left-">
+                  <div class="logo">
+                     <img src="images/logo.png">
+                  </div>
+               </div>
+               <div class="float-right- ml-auto rightSec">
+                  <!--     <ul>
+                     <li data-toggle="tooltip" data-placement="bottom" title="Status" class="availableStatus">
+                        <select class="availability">
+                           <option><span>&#xf21d </span> Anywhere</option>
+                           <option><span>&#xf015 </span> Home</option>
+                        </select>
+                     </li>
+                     <li data-toggle="tooltip" data-placement="bottom" title="Become A Proffesional"><a href=""><i class="fas fa-user-plus"></i></a></li>
+                     <li data-toggle="tooltip" data-placement="bottom" title="Alerts"><a href=""><i class="far fa-bell"></i></a></li>
+                     <li data-toggle="tooltip" data-placement="bottom" title="Settings"><a href=""><i class="fas fa-border-all"></i></a></li>
+                     <li data-toggle="tooltip" data-placement="bottom" title="User Settings"><a href=""><i class="fas fa-users-cog"></i></a></li>
+                     </ul> -->
+                  <nav class="navbar navbar-expand-lg navbar-light- bg-light-">
+                     <!--   <a class="navbar-brand" href="#">Navbar</a> -->
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="availableStatus ml-auto" >
+                        <select class="availability">
+                           <option><span>&#xf21d </span> Anywhere</option>
+                           <option><span>&#xf015 </span> Home</option>
+                        </select>
+                     </div>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                           <li data-toggle="tooltip" data-placement="bottom" title="Become A Proffesional" class="nav-item"><a href=""  class="nav-link" ><i class="fas fa-user-plus"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="Alerts" class="nav-item"><a href="" class="nav-link"><i class="far fa-bell"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="Settings" class="nav-item"><a href="" class="nav-link"><i class="fas fa-border-all"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="wallet" class="nav-item"><a href="" class="nav-link"><i class="fas fa-wallet"></i></a></li>
+                           <!-- <li data-toggle="tooltip" data-placement="bottom" title="Settings" class="nav-item"><a href="" class="nav-link"><i class="fas fa-rupee-sign"></i></a></li> -->                    
+                           <li data-toggle="tooltip" data-placement="bottom" title="User Settings" class="nav-item"><a href="" class="nav-link"><i class="fas fa-users-cog"></i></a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </header>
+            <section class="conatiner">
+               <!-- <div class="row text-center m-0"> -->
+               <div class="searchGroup text-center">
+                  <h2>I WANT</h2>
+                  <div class="input-group mb-3">
+                     <div class="input-group-append serviceSelection">
+                        <select class="selectpicker input-group-text" id="number" title="Choose Service">
+                           <option value="1">Plumber</option>
+                           <option value="2">Electrician</option>
+                           <option value="3">Corpenter</option>
+                        </select>
+                        <!-- <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</button>
+                           <div class="dropdown-menu">
+                             <a class="dropdown-item" href="#">Plumbing</a>
+                             <a class="dropdown-item" href="#">Electrician</a>
+                             <a class="dropdown-item" href="#">Bike Mechanic</a>      
+                             <a class="dropdown-item" href="#">Carpenter</a>
+                           </div> -->
+                     </div>
+                     <div class="input-group-prepend">
+                        <span class="input-group-text currentLocationBtn"><i class="fas fa-crosshairs"></i></span>
+                        <!--  <span class="input-group-text">0.00</span> -->
+                     </div>
+                     <input type="text" class="form-control locationSearchInput" aria-label="location" placeholder="or Enter Location">
+                     <button class="searchBtn input-group-text"><i class="fas fa-search"></i></button>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <div class="searchResult resultOne siblingTab">
+            <header class="d-flex">
+               <div class="float-left-">
+                  <div class="logo">
+                     <img src="images/logo.png">
+                  </div>
+                  <button class="backButton uiBackBtn"><i class="fas fa-arrow-left"></i></button>
+                  <div class="searchGroup text-center">
+                     <h2>I WANT</h2>
+                     <div class="input-group mb-3">
+                        <div class="input-group-append serviceSelection">
+                           <select class="selectpicker input-group-text" id="number" title="Choose Service">
+                              <option value="1" selected>Plumber</option>
+                              <option value="2">Electrician</option>
+                              <option value="3">Corpenter</option>
+                           </select>
+                        </div>
+                        <div class="input-group-prepend">
+                           <span class="input-group-text currentLocationBtn"><i class="fas fa-crosshairs"></i></span>
+                        </div>
+                        <input type="text" class="form-control locationSearchInput" aria-label="location" placeholder="or Enter Location">
+                        <button class="searchBtn input-group-text"><i class="fas fa-search"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="float-right- ml-auto rightSec">
+                  <nav class="navbar navbar-expand-lg navbar-light- bg-light-">
+                     <!--   <a class="navbar-brand" href="#">Navbar</a> -->
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="availableStatus ml-auto" >
+                        <select class="availability">
+                           <option><span>&#xf21d </span> Anywhere</option>
+                           <option><span>&#xf015 </span> Home</option>
+                        </select>
+                     </div>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                           <li data-toggle="tooltip" data-placement="bottom" title="Become A Proffesional" class="nav-item"><a href=""  class="nav-link" ><i class="fas fa-user-plus"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="Alerts" class="nav-item"><a href="" class="nav-link"><i class="far fa-bell"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="Settings" class="nav-item"><a href="" class="nav-link"><i class="fas fa-border-all"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="User Settings" class="nav-item"><a href="" class="nav-link"><i class="fas fa-users-cog"></i></a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </header>
+            <section class="conatiner">
+               <p class="foundResultCount">Found : <span>04 Results</span></p>
+               <div class="resultInfoContainer">
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Sagar J | Plumber | 14 Years Experience</h3>
+                        <h4><span class="candRating">(4.0) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 25 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 1.8km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>I serve all types of plumbing related work for daily basis or contract basis. and i do building contracts, etc</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo  col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Kishor Vara | Plumber | 10 Years Experience</h3>
+                        <h4><a class="candUrl" href="https://www.no-url.com">www.srikrishna.com! |</a>  <span class="candRating">(3.5) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 15 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 1.75km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>I do residential and commercial plumbing work for large contracts and medium contracts and maintanance, etc.</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Varma Kumar J | Plumber | 8 Years Experience</h3>
+                        <h4><a class="candUrl" href="https://www.no-url.com">www.sathaiah.com! |</a> <span class="candRating">(3.0) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 52 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 2.3km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>we serve entire hyderabad city for residential and commercial plumbing work like pipe fixing services, tank cleaning services, wash basin fitting, commercial plumbing requirements for large contracts</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Raja Shekar S | Plumber | 7.5 Years Experience</h3>
+                        <h4><a class="candUrl" href="https://www.no-url.com">www.sathaiah.com! |</a> <span class="candRating">(3.0) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 150 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 3.5km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>we serve at my service center. it is near ameerpet, hyderabad city for pipes and plumbing related equipment repairs.</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <div class="searchResult resultTwo siblingTab">
+            <header class="d-flex">
+               <div class="float-left-">
+                  <div class="logo">
+                     <img src="images/logo.png">
+                  </div>
+                  <button class="backButton uiBackBtn"><i class="fas fa-arrow-left"></i></button>
+                  <div class="searchGroup text-center">
+                     <h2>I WANT</h2>
+                     <div class="input-group mb-3">
+                        <div class="input-group-append serviceSelection">
+                           <select class="selectpicker input-group-text" id="number" title="Choose Service">
+                              <option value="1">Plumber</option>
+                              <option value="2" selected>Electrician</option>
+                              <option value="3">Corpenter</option>
+                           </select>
+                        </div>
+                        <div class="input-group-prepend">
+                           <span class="input-group-text currentLocationBtn"><i class="fas fa-crosshairs"></i></span>
+                        </div>
+                        <input type="text" class="form-control locationSearchInput" aria-label="location" placeholder="or Enter Location">
+                        <button class="searchBtn input-group-text"><i class="fas fa-search"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="float-right- ml-auto rightSec">
+                  <nav class="navbar navbar-expand-lg navbar-light- bg-light-">
+                     <!--   <a class="navbar-brand" href="#">Navbar</a> -->
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="availableStatus ml-auto" >
+                        <select class="availability">
+                           <option><span>&#xf21d </span> Anywhere</option>
+                           <option><span>&#xf015 </span> Home</option>
+                        </select>
+                     </div>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                           <li data-toggle="tooltip" data-placement="bottom" title="Become A Proffesional" class="nav-item"><a href=""  class="nav-link" ><i class="fas fa-user-plus"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="Alerts" class="nav-item"><a href="" class="nav-link"><i class="far fa-bell"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="Settings" class="nav-item"><a href="" class="nav-link"><i class="fas fa-border-all"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="User Settings" class="nav-item"><a href="" class="nav-link"><i class="fas fa-users-cog"></i></a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </header>
+            <section class="conatiner">
+               <p class="foundResultCount">Found : <span>04 Results</span></p>
+               <div class="resultInfoContainer">
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Raj Kumar Selayeti | Electrician | 14 Years Experience</h3>
+                        <h4><span class="candRating">(4.0) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 25 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 1.8km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>I serve all types of plumbing related work for daily basis or contract basis. and i do building contracts, etc</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo  col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Sri Krishna | Electrician | 10 Years Experience</h3>
+                        <h4><a class="candUrl" href="https://www.no-url.com">www.srikrishna.com! |</a>  <span class="candRating">(3.5) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 15 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 1.75km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>I do residential and commercial electrical work for large contracts and medium contracts and maintanance, etc.</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Sathaiah P | Electrician | 8 Years Experience</h3>
+                        <h4><a class="candUrl" href="https://www.no-url.com">www.sathaiah.com! |</a> <span class="candRating">(3.0) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 52 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 2.3km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>we serve entire hyderabad city for residential and commercial electrical work like tublet fitting, fan repair services, POP light fittig fitting, commercial electrical requirements for large contracts</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Jhonsan R | Electrician | 7.5 Years Experience</h3>
+                        <h4><a class="candUrl" href="https://www.no-url.com">www.Jhonsan.com! |</a> <span class="candRating">(3.0) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 150 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 3.5km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>we serve at my service center. it is near ameerpet, hyderabad city for pipes and electrical related equipment repairs.</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <div class="searchResult resultThree siblingTab">
+            <header class="d-flex">
+               <div class="float-left-">
+                  <div class="logo">
+                     <img src="images/logo.png">
+                  </div>
+                  <button class="backButton uiBackBtn"><i class="fas fa-arrow-left"></i></button>
+                  <div class="searchGroup text-center">
+                     <h2>I WANT</h2>
+                     <div class="input-group mb-3">
+                        <div class="input-group-append serviceSelection">
+                           <select class="selectpicker input-group-text" id="number" title="Choose Service">
+                              <option value="1" >Plumber</option>
+                              <option value="2">Electrician</option>
+                              <option value="3" selected>Corpenter</option>
+                           </select>
+                        </div>
+                        <div class="input-group-prepend">
+                           <span class="input-group-text currentLocationBtn"><i class="fas fa-crosshairs"></i></span>
+                        </div>
+                        <input type="text" class="form-control locationSearchInput" aria-label="location" placeholder="or Enter Location">
+                        <button class="searchBtn input-group-text"><i class="fas fa-search"></i></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="float-right- ml-auto rightSec">
+                  <nav class="navbar navbar-expand-lg navbar-light- bg-light-">
+                     <!--   <a class="navbar-brand" href="#">Navbar</a> -->
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="availableStatus ml-auto" >
+                        <select class="availability">
+                           <option><span>&#xf21d </span> Anywhere</option>
+                           <option><span>&#xf015 </span> Home</option>
+                        </select>
+                     </div>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                           <li data-toggle="tooltip" data-placement="bottom" title="Become A Proffesional" class="nav-item"><a href=""  class="nav-link" ><i class="fas fa-user-plus"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="Alerts" class="nav-item"><a href="" class="nav-link"><i class="far fa-bell"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="Settings" class="nav-item"><a href="" class="nav-link"><i class="fas fa-border-all"></i></a></li>
+                           <li data-toggle="tooltip" data-placement="bottom" title="User Settings" class="nav-item"><a href="" class="nav-link"><i class="fas fa-users-cog"></i></a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </header>
+            <section class="conatiner">
+               <p class="foundResultCount">Found : <span>04 Results</span></p>
+               <div class="resultInfoContainer">
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Sundhar | Carpenter | 11 Years Experience</h3>
+                        <h4><span class="candRating">(4.0) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 25 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 1.8km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>I serve all types of carpenter related work for daily basis or contract basis. and i do building contracts, etc</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo  col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Sri Krishna | Carpenter | 4 Years Experience</h3>
+                        <h4><a class="candUrl" href="https://www.no-url.com">www.srikrishna.com! |</a>  <span class="candRating">(3.5) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 15 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 1.75km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>I do residential and commercial carpenter work for large contracts and medium contracts and maintanance, etc.</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Jagadish Kanna | Carpenter | 3 Years Experience</h3>
+                        <h4><a class="candUrl" href="https://www.no-url.com">www.jagadish.com! |</a> <span class="candRating">(3.0) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 52 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 2.3km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>we serve entire hyderabad city for residential and commercial carpenter work like pipe fixing services, tank cleaning services, wash basin fitting, commercial plumbing requirements for large contracts</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="candidateSearchResult row m-0">
+                     <div class="leftInfo col-lg-6">
+                        <h3>Jhonsan R | Carpenter | 7.5 Years Experience</h3>
+                        <h4><a class="candUrl" href="https://www.no-url.com">www.jhonsan.com! |</a> <span class="candRating">(3.0) <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i></span> | <span class="contacted"> 150 Contacted</span></h4>
+                        <h5><span class="distance"><i class="fas fa-map-marker-alt"></i> 3.5km</span> | Available near by you > Ameerper, Hyderabad</h5>
+                        <p>we serve at my service center. it is near ameerpet, hyderabad city for pipes and plumbing related equipment repairs.</p>
+                        <button class="contactBtn" data-toggle="modal" data-target="#viewPersonDetails"><i class="far fa-user"></i> Contact Now</button>
+                     </div>
+                     <div class="mapInfo col-lg-3">
+                        <div class="mapTile">
+                           <img src="images/mapIcon.png">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal userOrginalInfo" id="viewPersonDetails">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Contact Details</h4>
+                  <button type="button" class="close closeModalDialog" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <div class="topSec">
+                     <div class="userPic"><img src="images/user0.png"></div>
+                     <div class="totRating"><i class="fas fa-star"></i><span>4.5</span></div>
+                     <div class="currentLocation home notHome-"><i class="fas fa-home homeActive"></i><i class="fas fa-street-view currLocActive"></i></div>
+                     <div class="leftSec">
+                        <p class="membershipType">Premium Member</p>
+                        <p class="idNumber"><strong>ID:</strong> <span>500088</span></p>
+                        <p class="personName"><strong>Name:</strong> <span>Sagar Jinna</span></p>
+                        <p class="jobName"><strong>Job:</strong> <span>Plumbing</span></p>
+                        <p class="workAt"><strong>Work Location:</strong> <span>Home & Current</span></p>
+                        <p class="availAt"><i class="fas fa-map-marker-alt"></i> <strong>Available At:</strong>  <span>Mytrivanam, Ameerpet, Hyderabad </span></p>
+                     </div>
+                  </div>
+                  <div class="card  userPopInfoTabs">
+                     <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation"><a href="#profile" class="active" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                        <li role="presentation"><a href="#PriceTable" aria-controls="PriceTable" role="tab" data-toggle="tab">Price Structure</a></li>
+                        <li role="presentation"><a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Work Gallery</a></li>
+                     </ul>
+                     <!-- Tab panes -->
+                     <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="profile">
+                           <!-- <legend>Responsive Tabs</legend> -->
+                           <p><strong>Name:</strong> <span class="workerName orgInfo hiddenText">Sagar Jinna</span></p>
+                           <p><strong>Phone:</strong> <span class="phoneNumber orgInfo hiddenText">+91 9876543210</span></p>
+                           <p><strong>Email:</strong> <span class="emailAddr orgInfo hiddenText">sagarjinna@gmail.com</span></p>
+                           <p><strong>Occupation:</strong> <span class="occuType">Plumber</span></p>
+                           <p><strong>Experience:</strong> <span class="totExp">14 Years</span></p>
+                           <p><strong>Certified Proffesion:</strong> <span class="certPro"> <i class="fas fa-check"></i> MEP Centre | <i class="fas fa-times"></i> but Trained</span></p>
+                           <p><strong>Job Description:</strong> <span class="jobDes">Having 14 + years of experience on small and large plumbing projects for commercial and residential services, i am also work as individual and group.</span></p>
+
+                               <div class="loader personDetailsLoader">
+                        <div class="loadingInfo active">
+                           <!--  <p><i class="fas fa-praying-hands"></i></p> -->
+                           <p><i class="fas fa-asterisk fa-spin"></i></p>
+                           <p>Thank you for contacting me.</p>
+                           <p class="typewrite" data-period="100" data-type='["Please wait...", "Transaction in process", "Information is fetching"]'>
+                              <span class="wrap"></span>
+                           </p>
+                        </div>
+                        <div class="successMsg">
+                           <p>Payment Successfull : 2 <i class="fas fa-rupee-sign"></i>
+                           <p>
+                        </div>
+                     </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="PriceTable">
+                          <div class="tableContainer">
+                             <table class="table priceTable">
+    <thead class="thead-dark">
+      <tr>
+        <th colspan="3" class="text-center">Residential Services</th>      
+      </tr>
+      <tr>
+        <th>Service</th>
+        <th>Sat-Fri</th>
+        <th>Sat-Sun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Consultaion</td>
+        <td>50 ₹</td>
+        <td>100 ₹</td>
+      </tr>
+      <tr>
+        <td>1 Hour</td>
+        <td>100 ₹</td>
+        <td>150 ₹</td>
+      </tr>
+      <tr>
+          <td>1.5 Hour</td>
+        <td>150 ₹</td>
+        <td>200 ₹</td>
+      </tr>
+      <tr>
+         <td>2 Hour</td>
+        <td>200 ₹</td>
+        <td>250 ₹</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table priceTable">
+    <thead class="thead-dark">
+        <tr>
+        <th colspan="3" class="text-center">Commecial Services</th>      
+      </tr>
+      <tr>
+        <th>Service</th>
+        <th>Sat-Fri</th>
+        <th>Sat-Sun</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr>
+        <td>Consultaion</td>
+        <td>50 ₹</td>
+        <td>100 ₹</td>
+      </tr>
+      <tr>
+        <td>First 1 Hour</td>
+        <td>200 ₹</td>
+        <td>300 ₹</td>
+      </tr>
+      <tr>
+        <td>2Hour Onwards</td>
+        <td>50 ₹ for each hour</td>
+        <td>70 ₹ for each hour</td>
+      </tr>
+      <tr>
+        <td>Entire Project</td>
+        <td colspan="2">As per the discussion</td>        
+      </tr>
+    </tbody>
+  </table>  
+                          </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane gallryTab" id="gallery">
+  <div class="row">
+    <a href="images/gallery/g1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/gallery/g1.jpg" class="img-fluid rounded">
+      <label>Residential Plumbing</label>
+    </a>
+    <a href="images/gallery/g2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/gallery/g2.jpg" class="img-fluid rounded">
+            <label>Residential Plumbing</label>
+    </a>
+    <a href="images/gallery/g3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/gallery/g3.jpg" class="img-fluid rounded">
+            <label>Residential Plumbing</label>
+    </a>
+  </div>
+  <div class="row">
+    <a href="images/gallery/g4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/gallery/g4.jpg" class="img-fluid rounded">
+            <label>Commercial Plumbing</label>
+    </a>
+    <a href="images/gallery/g5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/gallery/g5.jpg" class="img-fluid rounded">
+            <label>Commercial Plumbing</label>
+    </a>
+    <a href="images/gallery/g6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/gallery/g6.jpg" class="img-fluid rounded">
+            <label>Commercial Plumbing</label>
+    </a>
+  </div>
+                     </div>
+                 
+                  </div>
+               </div>
+          
+            </div>
+                 <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn viewDetailsBtn mr-auto particleBtn" onclick="particleBtnActive(this)">View Deatils at <span>2 <i class="fas fa-rupee-sign"></i></span></button>
+                  <button type="button" class="btn btn-danger ml-auto closeModalDialog" data-dismiss="modal">Close</button>
+               </div>
+         </div>
+      </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="js/bootstrap-select.js"></script>
+      <script src="js/typingText.js"></script>
+
+      <script type="text/javascript">
+         $('.serviceSelection .selectpicker').selectpicker({
+         liveSearch: true,
+         maxOptions: 1
+         });
+         //Availability Selection
+             $(".availability").selectpicker();
+         //Search current location or custom location
+         $('.locationSearchInput').keypress(function() {
+           $(this).addClass("active");
+                   $('.searchGroup .currentLocationBtn').removeClass('active');         
+             });
+         $('.locationSearchInput').blur(function(){
+             if( !this.value ) {
+                $(this).removeClass("active");
+                   $('.searchGroup .currentLocationBtn').addClass('active');                    
+             }
+          });
+         //Dropdown Select to active current location
+         $('.serviceSelection select').on('change',function() {
+         $(".currentLocationBtn").addClass('active');
+         
+          if($(this).val() == 'select'){
+           $(".currentLocationBtn").removeClass('active');
+          }
+         });
+         //view Details button to hide itself
+         
+         $('.viewDetailsBtn').click(function() { 
+         $(this).toggleClass('hide');
+             $('.orgInfo.hiddenText').removeClass('hiddenText');
+         $('.personDetailsLoader').addClass('active');
+         
+         setTimeout(function() {
+         $('.personDetailsLoader .loadingInfo').removeClass('active');
+         $('.personDetailsLoader .successMsg').addClass('active');
+         },12000);
+          setTimeout(function() {
+         $('.personDetailsLoader').removeClass('active');
+         },15000);
+         });
+         
+         
+         //Removing hide class for viewDetails Button
+         $('.closeModalDialog').click(function() { 
+         $('.viewDetailsBtn').removeClass('hide');
+         $('.personDetailsLoader .loadingInfo').addClass('active');
+         $('.personDetailsLoader .successMsg').removeClass('active');     
+          $('.orgInfo').addClass('hiddenText');   
+         });
+
+             
+         // $('.serviceSelection select.selectpicker').change(function(){
+         
+         //   if ($(this).val() == "1")
+         //   {
+         //       $('.resultOne').addClass('show').siblings('.siblingTab').removeClass('show');
+         //   }
+         //    if ($(this).val() == "2")
+         //   {
+         //       $('.resultTwo').addClass('show').siblings('.siblingTab').removeClass('show');
+         //   }
+         //    if ($(this).val() == "3")
+         //   {
+         //       $('.resultThree').addClass('show').siblings('.siblingTab').removeClass('show');
+         //   }
+                    
+         // });
+         
+         $('.searchBtn').click(function(e) { 
+            e.preventDefault();
+           if ($('.serviceSelection select.selectpicker').val() == "1")
+           {
+               $('.resultOne').addClass('show').siblings('.siblingTab').removeClass('show');
+           }
+            if ($('.serviceSelection select.selectpicker').val() == "2")
+           {
+               $('.resultTwo').addClass('show').siblings('.siblingTab').removeClass('show');
+           }
+            if ($('.serviceSelection select.selectpicker').val() == "3")
+           {
+               $('.resultThree').addClass('show').siblings('.siblingTab').removeClass('show');
+           }
+          });
+         $('.backButton').click(function(){
+         $('.resultZero').addClass('show').siblings('.siblingTab').removeClass('show');
+         });
+         //Boostrap tooltip
+         $(document).ready(function(){
+         $('[data-toggle="tooltip"]').tooltip(); 
+         });
+      </script>
+      <script type="text/javascript">
+         //Hidden Text Animation
+         var Messenger = function(el){
+         'use strict';
+         var m = this;
+         
+         m.init = function(){
+         m.codeletters = "5h04r8e9pe1";
+         m.message = 0;
+         m.current_length = 0;
+         m.fadeBuffer = false;
+         m.messages = [
+         'Data Hidden'    
+         ];
+         
+         setTimeout(m.animateIn, 100);
+         };
+         
+         m.generateRandomString = function(length){
+         var random_text = '';
+         while(random_text.length < length){
+         random_text += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
+         } 
+         
+         return random_text;
+         };
+         
+         m.animateIn = function(){
+         if(m.current_length < m.messages[m.message].length){
+         m.current_length = m.current_length + 2;
+         if(m.current_length > m.messages[m.message].length) {
+         m.current_length = m.messages[m.message].length;
+         }
+         
+         var message = m.generateRandomString(m.current_length);
+         $(el).html(message);
+         
+         setTimeout(m.animateIn, 20);
+         } else { 
+         setTimeout(m.animateFadeBuffer, 20);
+         }
+         };
+         
+         m.animateFadeBuffer = function(){
+         if(m.fadeBuffer === false){
+         m.fadeBuffer = [];
+         for(var i = 0; i < m.messages[m.message].length; i++){
+         m.fadeBuffer.push({c: (Math.floor(Math.random()*12))+1, l: m.messages[m.message].charAt(i)});
+         }
+         }
+         
+         var do_cycles = false;
+         var message = ''; 
+         
+         for(var i = 0; i < m.fadeBuffer.length; i++){
+         var fader = m.fadeBuffer[i];
+         if(fader.c > 0){
+         do_cycles = true;
+         fader.c--;
+         message += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
+         } else {
+         message += fader.l;
+         }
+         }
+         
+         $(el).html(message);
+         
+         if(do_cycles === true){
+         setTimeout(m.animateFadeBuffer, 50);
+         } else {
+         setTimeout(m.cycleText, 2000);
+         }
+         };
+         
+         m.cycleText = function(){
+         m.message = m.message + 1;
+         if(m.message >= m.messages.length){
+         m.message = 0;
+         }
+         
+         m.current_length = 0;
+         m.fadeBuffer = false;
+         $(el).html('');
+         
+         setTimeout(m.animateIn, 200);
+         };
+         
+         m.init();
+         }
+         console.clear();
+         var messenger = new Messenger($('.hiddenText'));
+      </script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script type="text/javascript">
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+</script>
+   </body>
+</html>
